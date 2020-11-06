@@ -1,0 +1,54 @@
+//colors
+$colors: (
+  "primary": #db9e3f,
+  "white": #fff,
+  "white-1": #fcfcfc,
+  "white-2": #eceef0,
+  "light": #f9f9f9,
+  "black": #000,
+  "dark": #222,
+  "dark-1": #343440,
+  "grey": #999,
+  "grey-1": #666,
+  "blueblack":rgb(20,20,40),
+  "light-1":#d4d9de,
+  "blue": #4394e4,
+  "blue-1": #1f3695,
+  "danger": #791a15,
+  "blackyellow": #7f5300
+);
+
+//border
+$border-color: map-get($colors, 'light-1');
+
+//font size
+$base-font-size: 1rem;//定义一个基础的字体大小 其余字体使用其比例
+$font-sizes: (//使用px to rem插件alt+z可以换算
+  xxs: 0.6154,//8px
+  xs: 0.7692,//10px
+  sm: 0.9231, //12px
+  md: 1,//13px
+  lg: 1.0769,//14px
+  xl: 1.2308//16px
+);
+
+$flex-jc: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+);
+
+$flex-ai: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,//在水平上有一定对齐方式的前提，需要垂直等高的时候
+);
+
+//spacing 边距
+$spacing-base-size: 1rem;
+$spacing-types: (m: margin, p: padding);
+$spacing-directions: (t: top, r: right, b: bottom, l: left);
+$spacing-sizes: (0: 0, 1: 0.25, 2:0.5 , 25:0.7 ,3: 1, 4: 1.5, 5: 3);
