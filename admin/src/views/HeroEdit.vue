@@ -36,7 +36,7 @@
               :action="$http.defaults.baseURL + '/upload'"
               :headers='getAuthHeaders()'
               :show-file-list="false"
-              :on-success="res=> $set(model, 'banner', res.iturl)">
+              :on-success="res=> $set(model, 'banner', res.url)">
               <img v-if="model.banner" :src="model.banner" class="avatar">
               <i v-else class="el-icon-plus avatar-uploader-icon"></i>
             </el-upload><!--action是上传的接口地址 $http.defaults指默认参数 里面有url-->

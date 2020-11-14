@@ -57,7 +57,7 @@ module.exports = app => {
   
   app.post('/admin/api/upload', authMiddware(), upload.single('file'), async (req, res) => {//single指单个文件上传
     const file = req.file//使用了中间件 所以可以req.file
-    file.url = `http://localhost:3000/uploads/${file.filename}`//拼接出url返回 前提是进行静态托管
+    file.url = `http://www.border-bottom.com/uploads/${file.filename}`//拼接出url返回 前提是进行静态托管
     res.send(file)
   })
 
