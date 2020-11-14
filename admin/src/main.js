@@ -9,6 +9,12 @@ import http from './http'
 Vue.prototype.$http = http
 
 Vue.mixin({//用于解决上传文件无法获取请求头的问题
+
+  computed: {
+    uploadUrl() {
+      return this.$http.defaults.baseURL + '/upload'
+    }
+  },
   methods: {
     getAuthHeaders() {
       return {

@@ -33,7 +33,7 @@
             <el-form-item label='Banner'>
               <el-upload
               class="avatar-uploader"
-              :action="$http.defaults.baseURL + '/upload'"
+              :action="uploadUrl"
               :headers='getAuthHeaders()'
               :show-file-list="false"
               :on-success="res=> $set(model, 'banner', res.url)">
